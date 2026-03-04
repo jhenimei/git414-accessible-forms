@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+<!-- 	 TO-DO: ADD META TAG AND NAME HERE  -->
+	<meta name="author" content="Jhenica Magana">
+	<title>Form Activity Solution File</title>
+<!-- 	 TO-DO: ADD LINK TO CSS HERE  -->
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<a href="#main-content" id="skipLink">Skip to main content</a>
+	<header>
+		<h1>Form Activity - GIT414</h1>
+		<nav>
+			<h2 class="sr-only">Site Navigation</h2>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="particleBackground"></div>
+	<main id="main-content">
+		<article>
+			<h2>Coding Semantic and Accessible Forms!</h2>
+			<p>Today we'll be focusing on coding a form that is accessible and semantic, and we'll also briefly discuss skip links for your website. Forms can be a source of frustration for users, whether they specifically need help with accessing your website or if they just prefer that your forms be easy to use and submit. Follow along as we code this in class, and please ask questions as they arise. Let's make a form!</p>
+
+<!-- 	 TO-DO: ADD FORM CODE HERE DURING CLASS, FOLLOW ALONG TO COMPLETE  -->
+			<section>
+				<h3>Contact Form</h3>
+				<form action="https://wp.zybooks.com/form-viewer.php" method="post">
+					<!-- full name (first and last) -->
+					<label for="fullName">Full Name <span class="required">*</span></label>
+					<input type="text" name="fullName" id="fullName" autocomplete="name" required aria-invalid="true">
+
+					<!-- user's email address -->
+					<label for="emailAddress">Email Address <span class="required">*</span></label>
+					<input type="email" name="emailAddress" id="emailAddress" autocomplete="email" required aria-invalid="true">
+
+					<!-- user's phone number -->
+					<label for="phoneNumber">Phone Number <span class="required">*</span></label>
+					<input type="tel" name="phoneNumber" id="phoneNumber" autocomplete="tel" required aria-invalid="true">
+					
+					<!-- choose their preferred method of contact (email or phone) -->
+					<fieldset>
+						<legend>Preferred Contact Method <span class="required">*</span></legend>
+						
+						<input type="radio" id="phone" name="contactMethod" value="phone" required>
+						<label for="phone">Phone</label>
+						
+						<input type="radio" id="email" name="contactMethod" value="email" required>
+						<label for="email">Email</label>
+					</fieldset>
+					
+					<!-- choos their state of residence -->
+					<label for="stateOfResidence">State of Residence <span class="required">*</span></label>
+					<select name="stateOfResidence" id="stateOfResidence">
+						<option value="" disabled selected>Chose your State</option>
+						<option value="alabama">AL - Alabama</option>
+						<option value="alaska">AK - Alaska</option>
+						<option value="arizona">AZ - Arizona</option>
+						<option value="arkansas">AR - Arkansas</option>
+						<option value="california">CA - California</option>
+						<option value="Colorado">CO - Colorado</option>
+						<option value="connecticut">CT - Connecticut</option>
+						<option value="Delaware">DE - Delaware</option>
+						<option value="florida">FL - Florida</option>
+						<option value="georgia">GA - Georgia</option>
+						<option value="hawaii">HI - Hawaii</option>
+						<option value="idaho">ID - Idaho</option>
+						<option value="Illinois">IL - Illinois</option>
+						<option value="indiana">ID - Indiana</option>
+						<option value="iowa">IA - Iowa</option>
+						<option value="kansas">KS - Kansas</option>
+						<option value="kentucky">KY - Kentucky</option>
+						<option value="louisiana">LA - Louisiana</option>
+						<option value="maine">ME - Maine</option>
+						<option value="maryland">MD - Maryland</option>
+						<option value="massachusetts">MA - Massachusetts</option>
+						<option value="michigan">MI - Michigan</option>
+						<option value="minnesota">MN - Minnesota</option>
+						<option value="mississippi">MS - Mississippi</option>
+						<option value="missouri">MO - Missouri</option>
+						<option value="montana">MT - Montana</option>
+						<option value="nebraska">NE - Nebraska</option>
+						<option value="nevada">NV - Nevada</option>
+						<option value="new-hampshire">NH - New Hampshire</option>
+						<option value="new-jersey">NJ - New Jersey</option>
+						<option value="new-mexico">NM - New Mexico</option>
+						<option value="new-york">NY - New York</option>
+						<option value="north-carolina">NC - North Carolina</option>
+						<option value="north-dakota">ND - North Dakota</option>
+						<option value="ohio">OH - Ohio</option>
+						<option value="oklahoma">OK - Oklahoma</option>
+						<option value="oregon">OR - Oregon</option>
+						<option value="pennsylvania">PA - Pennsylvania</option>
+						<option value="rhode-island">RI - Rhode Island</option>
+						<option value="south-carolina">SC - South Carolina</option>
+						<option value="south-dakota">SD - South Dakota</option>
+						<option value="tennessee">TN - Tennessee</option>
+						<option value="texas">TX - Texas</option>
+						<option value="utah">UT - Utah</option>
+						<option value="vermont">VT - Vermont</option>
+						<option value="virginia">VA - Virginia</option>
+						<option value="washington">WA - Washington</option>
+						<option value="west-virginia">WV - West Virginia</option>
+						<option value="wisconsin">WI - Wisconsin</option>
+						<option value="wyoming">WY - Wyoming</option>
+					</select>
+					
+					<!-- for entering any comment -->
+					<label for="comments">Comments</label>
+					<textarea name="comments" id="comments"></textarea>
+					
+					<!-- sumbit form -->
+					<input type="submit">
+				</form>
+			</section>
+		</article>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2021 - GIT414</p>
+	</footer>
+</body>
+</html>
